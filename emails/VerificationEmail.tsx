@@ -9,13 +9,14 @@ import {
   Text,
   Button,
 } from '@react-email/components';
+import React from 'react';
 
 interface VerificationEmailProps {
   username: string;
   otp: string;
 }
 
-export default function VerificationEmail({ username, otp }: VerificationEmailProps) {
+export default function VerificationEmail({ username, otp }: VerificationEmailProps) : React.ReactNode {
   return (
     <Html lang="en" dir="ltr">
       <Head>
